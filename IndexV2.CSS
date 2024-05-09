@@ -1,0 +1,476 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    /*
+    padding: 0;
+    */
+}
+/*--Navbar--*/
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    }
+    *{
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: green;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+label{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: rgb(96, 141, 96);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: rgb(0, 0, 0);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+}
+/*
+li{
+list-style: none;
+display: inline-block;
+}
+*/
+
+.content{
+
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    
+  }
+
+  .content h1{
+    font-size: 50px;
+    margin-top: 20vh;
+    font-family: Sans-Serif;
+    
+  }
+  .content p{
+
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 33px;
+
+  }
+  .buttons{
+    margin-bottom: 10vh;
+    margin-left: 20vh;
+  }
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid green;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+  
+    
+}
+.button1{
+right: 61vh !important;
+top: 10px;
+font-size: 16px;
+}
+
+
+.button2{
+  top: 10px;
+  right: 63vh !important;
+  font-size: 16px;
+}
+button:hover span{
+width: 100%;
+
+}
+button:hover{
+border: none;
+}
+/*--put in commet so the p span in the middle of the banner works well--
+span{
+background: green;
+height: 100%;
+width: 0;
+border-radius: 25px;
+position: absolute;
+left:0;
+bottom:0;
+z-index: -1;
+}
+*/
+
+.banner{
+width: 100%; 
+height: 95vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pexels-julia-m-cameron-6995201-2.jpg); 
+background-size: cover;
+background-position: center;
+}
+.heading{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  }
+  .heading h1{ font-size: 50px; color:#000; margin-bottom: 25px; position: relative;
+  }
+    .heading h1::after{ 
+    content: "";
+    position: absolute;
+    width: 100%; height: 4px;
+    display: block; margin:0 auto;
+    background-color: #4caf50;
+    }
+    .heading p{ font-size: 18px; 
+    color:#666;
+    margin-bottom: 35px;
+    }
+  
+    .container{ 
+    width: 90%;
+    margin: 0 auto; 
+    padding: 10px 20px;
+  }
+ 
+  .hero{
+    
+    position: relative;
+    width: 100%;
+     display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  overflow: hidden;
+  
+   
+  }
+  .hero::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 60%);
+
+  }
+  
+  
+  
+  
+
+  /*--
+  .videobj{
+    
+    
+  }
+  */
+
+
+/*--
+  @media (min-aspect-ratio: 16/9){ .videobj{ width: 100%;
+    height: auto;
+    }
+  }
+    @media (max-aspect-ratio: 16/9){ .videobj{ width: auto;
+    height: 100%;
+    }
+  }
+*/
+
+
+
+
+
+
+  .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    fLex-wrap: wrap;
+    }
+    .about-image{ 
+    flex:0.7;
+    margin-right: 40px;
+    overflow: hidden;
+    margin-top: 80px;
+    }
+    .about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .about2 {
+      position: relative; /* Ensure positioning context for absolute positioning */
+      display: flex;
+      align-items: center;
+    }
+    
+    .about-image2 {
+      position: absolute; /* Positioning the second image */
+      right: 0; /* Align the second image to the right */
+      top: 0; /* Adjust the vertical position if needed */
+    }
+    
+    .about-image2 img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      transition: 0.5s ease;
+    }
+    
+    .about-image2 {
+      width: 500px; /* Adjust the width as needed */
+    }
+   
+    
+    .about-content{
+      flex: 1;
+    }
+    .about-content h2{
+      font-size: 50px;
+    }
+    .about-content p{
+      font-weight: bold;
+    }
+  
+    .container img{
+   
+    
+    border-radius: 10%;
+  
+    }
+
+
+
+
+
+/*--footer style--*/
+
+footer{
+  background-color: green;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: green;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.row{
+  margin-top: 5%;
+  
+  
+  display: flex;
+  flex-direction: column; /* Vertical stacking */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text */
+}
+.h1AboutUs{
+    
+  font-size: 6vh;
+  font-weight: 600;
+}
+.course-col {
+
+  font-weight: 600;
+  font-size: 4.5vh;
+  color: rgb(213, 209, 209);
+  background: rgb(48, 140, 71); 
+  border-radius: 7.5vh;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  width: 60vh; /* Example fixed width */
+  height: 60vh; /* Equal height to make it a cube */
+}
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="htmlDonate" lang="eng"> 
+<head>
+    <title>Donate</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Donate.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script language="JavaScript">
+
+        function ValidationCheck(form) {
+          if (form.NameInput.value == "")
+            alert("You forgot to put anything for Name!")
+           if (form.EmailInput.value == "" || form.EmailInput.value.indexOf('@') == -1) 
+           alert("You did not put a valid Email!");}
+        </script>
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav style="z-index: 1000;">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="logo3.png" class="logo">
+        <ul>
+          <li><a class="active" href="indexV2.html">Home</a></li>
+          <li><a href="IndexV2.html#About">About</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+          <li><a href="Donate.html">Donate</a></li>
+          <li><a href="Volunteer.html">Volunteer</a></li>
+          <li><a href="Blog.htm">Blog</a></li>
+          <li><a href="campain.html">Campain</a></li>
+        </ul>
+      </nav>
+            <!--Donate box-->
+
+            <!--Select ammount of time to make a payment-->
+            
+ <div class="containerDonate">
+
+    <h3>Select Currency</h3>
+    <div class="time">
+        <label>
+            <input type="radio" name="currency" value="monthly"> Monthly
+        </label>
+        <label>
+            <input type="radio" name="currency" value="onetime"> Onetime
+        </label>
+    
+    </div>
+<!--Select money ammount-->
+    <p>Select Amount</p>
+    <div class="valueDonate">
+        <input type="radio" id="amount10" name="amount" value="10">
+        <label for="amount10" class="money">£10</label>
+        
+        <input type="radio" id="amount30" name="amount" value="30">
+        <label for="amount30" class="money">£30</label>
+        
+        <input type="radio" id="amount50" name="amount" value="50">
+        <label for="amount50" class="money">£50</label>
+        
+        <input type="radio" id="amount100" name="amount" value="100">
+        <label for="amount100" class="money">£100</label>
+        
+        <input type="radio" id="amount500" name="amount" value="500">
+        <label for="amount500" class="money">£500</label>
+ </div>
+<!--Transaction fee box-->
+    <div class="confirmDonate">
+        <input type="checkbox" name="" id="">
+        <span>Yes I will add £0.30 for the transaction</span>
+        </div>
+<!--Name and email input-->
+        <div class="inputDonate">
+            <p>Name</p>
+            <input type="text" name="NameInput" id="" placeholder="Enter your name">
+            <p>Email</p>
+            <input type="text" name="EmailInput" placeholder="Enter your name">
+            </div>
+            
+<!--Motivational massege to user-->
+            <p>Give in honor to another person</p>
+            <button onClick="ValidationCheck(this.form)" value="Submit" >Donate</button>
+            <p>By donating, you agree to our <span class="blue">terms of service </span>and <span class="blue">privecy policy </span> </p>
+            </div>
+<img class="responsiveimg" src="undraw_breakfast_psiw.svg" alt="">
+            <div> <h2 style="text-align: center;">What can donations hlep with</h2></div>
+
+            <div class="table">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Donation</th>
+                            <th>Equals</th>
+                            <th>Impact</th>
+                            <th>Ammount</th> <!-- Additional column for 4x4 structure -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>£2</td>
+                            <td>=</td>
+                            <td>2 people fed</td>
+                            <td>Small donation</td> <!-- New column -->
+                        </tr>
+                        <tr class="active-row">
+                            <td>£10</td>
+                            <td>=</td>
+                            <td>A family fed</td>
+                            <td>Moderate donation</td> <!-- New column -->
+                        </tr>
+                        <tr>
+                            <td>£50</td>
+                            <td>=</td>
+                            <td>5 families fed</td>
+                            <td>Large donation</td> <!-- New column -->
+                        </tr>
+                        <tr>
+                            <td>£100</td>
+                            <td>=</td>
+                            <td>10 families fed</td>
+                            <td>Generous donation</td> <!-- New column -->
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <footer>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="footerNav">
+                        <ul><li><a href="indexV2.html">Home</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li><a href="">our Team</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023
+                </div>
+            </footer>
+
+</body>
+</html>
+
+
+

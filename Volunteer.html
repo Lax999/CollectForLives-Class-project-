@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<title>Voluteer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="Volunteer.CSS">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script language="JavaScript">
+
+    function ValidationCheck(form) {
+ 	 if (form.NameInput.value == "")
+   	 alert("You forgot to put anything for Name!")
+  	 if (form.EmailInput.value == "" || form.EmailInput.value.indexOf('@') == -1) 
+   	alert("You did not put a valid Email!");}
+    </script>
+    
+</head>
+<body>
+    <nav style="z-index: 1000;">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="logo3.png" class="logo">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="IndexV2.html#About">About</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+          <li><a href="Donate.html">Donate</a></li>
+          <li><a href="Volunteer.html">Volunteer</a></li>
+          <li><a href="Blog.htm">Blog</a></li>
+          <li><a href="campain.html">Campain</a></li>
+        </ul>
+      </nav>
+            <img src="undraw_begin_chat_re_v0lw.svg"class="responsiveimg" alt="">
+    <div class="container">
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Volunteer info</h3>
+            <div id="error"></div>
+            <form method="get">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input class="input" name="NameInput" placeholder="John Williams" >
+
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" class="input" name="phone" placeholder="07467384496">
+
+                    </div>
+                    
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input class="input" name="email" placeholder="JohnWilliams.gmail.com">
+
+                    </div>
+                    
+                    
+                    <label>Area</label>
+                        <div class="select-container"> 
+                            <select class="select-box" >
+                            <option value="">Select an option</option>
+                            <option value="firts">West London</option>
+                            <option value="second">South London</option>
+                            <option value="third">North London</option>
+                            <option value="fourth">East London</option>
+
+                            </select>
+                            <div class="icon-container">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                </div>
+                    <P>We will reach out to you after you submit your intrest!</P>
+                    <input class="button" type="button" name="button1" value="Submit" onClick="ValidationCheck(this.form)">
+
+                
+            </form>
+
+</div>
+</div>
+</div>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="indexV2.html">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
